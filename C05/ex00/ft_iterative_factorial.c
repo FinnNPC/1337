@@ -4,21 +4,21 @@ int ft_iterative_factorial(int nb)
 	{	
 		return 0;
 	}
-	else if (nb == 0)
+	else if (nb == 0 || nb == 1)
 	{
 		return 1;
 	}
 	else
 	{
      		int i;
-                i = nb;
+                i = 2;
                 int result;
 		result = 1;
 
-		while (i != 0)
+		while (i <= nb)
 		{
 			result = result * i;
-			i--;
+			i++;
 		}
 
 		return result;

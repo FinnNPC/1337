@@ -3,6 +3,9 @@
 
 #include <stdlib.h>
 
+char *ft_strcpy(char *dest, char *src);
+int ft_strlen(char *str);
+
 typedef struct s_stock_str
 {
 	int size;
